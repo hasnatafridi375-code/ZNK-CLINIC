@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZNK Clinic | Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                ZNK <span>Clinic</span>
+            </div>
+            <div class="mobile-menu-btn">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="appointment.html" class="active">Appointment</a></li>
+                <li><a href="appointment.html" class="btn-primary" style="padding: 0.5rem 1.5rem; color: white;">Book
+                        Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="padding-top: 8rem;">
+        <div class="appointment-container">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h2>Book Your Appointment at ZNK Clinic</h2>
+                <p>Schedule your visit at our DHA location - Consultation Fee: Rs. 1,000</p>
+            </div>
+
+            <form id="appointment-form">
+                <div class="fee-display">
+                    Appointment Fee: Rs. 1000
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Skincare Specialist</label>
+                    <select id="doctor" class="form-control" required>
+                        <option value="" disabled selected>Choose a Specialist...</option>
+                        <option value="Dr. Ayesha Malik">Dr. Ayesha Malik (Dermatologist)</option>
+                        <option value="Dr. Sarah Khan">Dr. Sarah Khan (Cosmetic Dermatologist)</option>
+                        <option value="Dr. Zainab Ahmed">Dr. Zainab Ahmed (Aesthetic Medicine)</option>
+                        <option value="Dr. Fatima Siddiqui">Dr. Fatima Siddiqui (Laser Treatment)</option>
+                        <option value="Dr. Hina Tariq">Dr. Hina Tariq (Clinical Dermatologist)</option>
+                        <option value="Dr. Nida Hassan">Dr. Nida Hassan (Skin Rejuvenation)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="0300-1234567" required>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label style="margin-bottom: 1rem; display: block;">Payment Method</label>
+                    <div class="payment-methods">
+                        <div class="payment-method-card active">
+                            <i class="fa-solid fa-cart-plus"
+                                style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color);"></i>
+                            <h4>Add to Cart</h4>
+                            <small>Pay later with other services</small>
+                            <button type="button" class="btn btn-secondary add-to-cart-btn"
+                                style="width: 100%; margin-top: 0.5rem; font-size: 0.8rem;">Add to Cart</button>
+                        </div>
+                        <div class="payment-method-card">
+                            <i class="fa-solid fa-money-bill-transfer"
+                                style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--secondary-color);"></i>
+                            <h4>Account Transfer</h4>
+                            <small>Direct Bank Transfer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923450731223" class="floating-whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
